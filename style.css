@@ -2,6 +2,9 @@
 h1 {
     text-align: center;
     font-family: helvetica;
+    color:#D8C8A3;
+    margin-top: 10px;
+    padding-top: 10px;
 }
 
 h1 a {
@@ -10,7 +13,7 @@ h1 a {
 }
 
 h1 a:hover {
-    color: #007bff; /* Verandert kleur bij hover, optioneel */
+    color: #988F75; /* Verandert kleur bij hover, optioneel */
 }
 
 .calendarp h3{
@@ -19,6 +22,7 @@ h1 a:hover {
     margin-top: 100px;
     margin-bottom: 3px;
     padding: 0px;
+    color: #77835B;
 }
 .calendarp p{
     font-family: Helvetica, sans-serif;
@@ -26,6 +30,7 @@ h1 a:hover {
     margin-top: 0px;
     margin-bottom: 50px;
     padding: 0px;
+    color: #92A06E;
 }
 
 
@@ -65,8 +70,8 @@ h1 a:hover {
 .button-container a{
     display: inline-block;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #D8C8A3;
+    color: #92A06E;
     border: none;
     border-radius: 5px;
     text-decoration: none;
@@ -78,7 +83,7 @@ h1 a:hover {
 .calendar-button a{
     display: inline-block;
     padding: 10px 20px;
-    background-color: #0c701d;
+    background-color: #708237;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -90,11 +95,12 @@ h1 a:hover {
 /* Hover effect for buttons */
 .button-container a:hover,
 .calendar-button a:hover {
-    background-color: #0056b3;
+    background-color: #988F75;
+    color:#43501F
 }
 
 .calendar-button a:hover {
-    background-color: #094b14;
+    background-color: #43501F;
 }
 
 /* Media query for tablet-sized screens */
@@ -129,14 +135,14 @@ h1 a:hover {
 }
 
 .headgrid h2 {
-    color: white;
+    color: #77835B;
     padding: 0;
     margin:0;
     font-family: helvetica;
 }
 
 .headgrid p {
-    color: white;
+    color: #92A06E;
     padding: 0;
     margin:0;
     font-family: helvetica;
@@ -148,7 +154,7 @@ body {
 }
 
 .headachtergrond{
-    background-color: #1d1e1f;
+    background-color: #F5F5DD;
     
 }
 
@@ -168,6 +174,7 @@ main h3 {
     font-weight: bold;
     margin: 0;
     font-family: helvetica;
+    color: #77835B;
 }
 
 /* Paragraph styling inside main */
@@ -175,6 +182,7 @@ main p {
     font-size: 1.1em;
     text-align: center;
     font-family: helvetica;
+    color: #92A06E;
 }
 
 /* Gallery container styling */
@@ -209,3 +217,120 @@ main p {
     }
 }
 
+.boeken{
+    background-color: #F5F5DD;
+}
+
+.gridpannel img{
+    max-width: 400px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.panel {
+    width: 300px;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.panel img {
+    width: 100%;
+    height: auto;
+}
+
+.panel h2 {
+    margin: 15px 0;
+    font-size: 1.5em;
+    color: #77835B;
+}
+
+.panel p {
+    padding: 0 15px;
+    font-size: 0.9em;
+    color: #92A06E;
+}
+
+.panel button {
+    margin: 15px 0;
+    padding: 10px 20px;
+    color: #AAAB9C;
+    background-color: #ffffff; /* Achtergrondkleur */
+    border: 2px solid #AAAB9C; /* Zet de randkleur, dikte en stijl */
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Voor een soepele overgang */
+}
+
+.panel button:hover {
+    background-color: #AAAB9C;
+    color: #ffffff;
+    border-color: #ffffff; /* Verandert de randkleur bij hover */
+}
+
+.panelachtergrond{
+    margin-bottom: 100px;
+    padding-bottom: 100;
+    padding-top: 100;
+}
+
+nav {
+   padding-bottom: 20px;
+   margin-bottom: 10px;
+   padding-top: 5px;
+   margin-top: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #92A06E;
+    font-size: 1.1em;
+    padding: 5px;
+    transition: color 0.3s ease;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    color: #5A6445; /* Lichte kleurverandering bij hover */
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em; /* Verklein de titel op kleinere schermen */
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        text-align: center; /* Iets kleinere tekst voor mobiele weergave */
+    }
+}
