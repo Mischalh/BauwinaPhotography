@@ -1,0 +1,178 @@
+/* Center the main title */
+h1 {
+    text-align: center;
+    font-family: helvetica;
+}
+
+
+
+/* Define the grid layout for the content */
+.headgrid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Image column is larger */
+    gap: 20px;
+    align-items: start;
+    padding: 20px;
+}
+
+/* Image container styling */
+.headimg img {
+    max-height: 700px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Style for the text content on the right */
+.text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 1em;
+}
+
+/* Container for buttons arranged in a row (social media buttons under the image) */
+.button-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+/* General button styling for both social media and calendar buttons */
+.button-container a,
+.calendar-button a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    
+}
+
+/* Hover effect for buttons */
+.button-container a:hover,
+.calendar-button a:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for tablet-sized screens */
+@media (max-width: 768px) {
+    .headgrid {
+        grid-template-columns: 1fr; /* Stacks image and text */
+        text-align: center;
+    }
+
+    .text-content {
+        font-size: 0.9em; /* Slightly smaller font */
+    }
+
+    .button-container a,
+    .calendar-button a {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+}
+
+/* Media query for smaller mobile screens */
+@media (max-width: 480px) {
+    .text-content {
+        font-size: 0.8em; /* Further reduces font size */
+    }
+
+    .button-container a,
+    .calendar-button a {
+        padding: 6px 12px;
+        font-size: 0.8em;
+    }
+}
+
+.headgrid h2 {
+    color: white;
+    padding: 0;
+    margin:0;
+    font-family: helvetica;
+}
+
+.headgrid p {
+    color: white;
+    padding: 0;
+    margin:0;
+    font-family: helvetica;
+}
+
+body {
+    margin:0;
+    padding: 0;
+}
+
+.headachtergrond{
+    background-color: #1d1e1f;
+    
+}
+
+/* Main content styling */
+main {
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px; /* Added padding for better spacing */
+    max-width: 1200px; /* Limit width on large screens */
+}
+
+/* Heading styling inside main */
+main h3 {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    font-family: helvetica;
+}
+
+/* Paragraph styling inside main */
+main p {
+    font-size: 1.1em;
+    text-align: center;
+    font-family: helvetica;
+}
+
+/* Gallery container styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap into rows */
+    gap: 20px; /* Uniform gap between images */
+    justify-content: center; /* Center the images */
+}
+
+/* Image styling */
+.gallery img {
+    width: 19%; /* 5 images per row on large screens */
+    height: auto;
+    border-radius: 0px;
+    object-fit: cover; /* Ensures images fit within their container */
+    max-height: 300px; /* Set a max height to avoid the images becoming too large */
+}
+
+/* Media query for tablet-sized screens (<= 768px) */
+@media (max-width: 768px) {
+    .gallery img {
+        width: 29%; /* 3 images per row on smaller screens */
+    }
+}
+
+/* Media query for mobile-sized screens (<= 480px) */
+@media (max-width: 480px) {
+    .gallery img {
+        width: 100%; /* 1 image per row on very small screens */
+        max-height: 250px; /* Optionally limit the image height */
+    }
+}
+
+.achtergrondgallery{
+    
+}
